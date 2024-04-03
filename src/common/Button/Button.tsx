@@ -1,11 +1,10 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 
-// Definir una interfaz para las props
 interface ButtonsProps {
   variant: "text" | "contained" | "outlined" ; // Puedes añadir más variantes según necesites
   size: "small" | "medium" | "large";
-  buttonText: string;
+  buttonText: String;
 }
 
 const Buttons: React.FC<ButtonsProps> = ({ variant, size, buttonText }) => {
