@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Inicio: React.FC = () => {
+const Information: React.FC = () => {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/">Inicio</Link>
+          <Link to="/">Informacion</Link>
         </li>
+        
       </ul>
     </nav>
   );
 };
 
-export default Inicio;
+export default Information;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Productos: React.FC = () => {
+const Menu: React.FC = () => {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/">Inicio</Link>
+          <Link to="/">menu</Link>
         </li>
         
       </ul>
@@ -14,4 +14,4 @@ const Productos: React.FC = () => {
   );
 };
 
-export default Productos;
+export default Menu;
