@@ -16,3 +16,32 @@
     min-width: 100%;
     object-fit: cover; 
 }
+.carousel-overlay {
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+  color: #fff; /* Texto blanco */
+  padding: 20px;
+  width: 400px; /* O el ancho que necesites */
+}
+
+.carousel-overlay h2,
+.carousel-overlay p {
+  margin: 0; /* Remueve los márgenes predeterminados si es necesario */
+}
+.carousel-item img {
+  transition: filter 0.5s ease-in-out; /* Transición suave para el efecto de filtro */
+}
+
+/* Efecto hover para las imágenes */
+.carousel-item img:hover {
+  filter: blur(2px); /* Oscurece la imagen */
+}
+.carousel-control-prev, .carousel-control-next {
+  transition: filter 0.5s ease-in-out;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  filter: brightness(75%);
+}
