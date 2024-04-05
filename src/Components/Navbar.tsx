@@ -6,7 +6,7 @@ export  const Navbar = () =>{
   const [menuOpen, setMenuOpen]= useState(false)
   return (
     <nav >
-      <Link to={"/"} className="title"><img src="/src/assets/logo1.png" alt="Logo" width="70" height="60" className=" align-text-top "/>Guru Guru Bubble Tea</Link>
+      <Link to={"/"} className="title"><img src="/src/assets/logo1 (1).png" alt="Logo" width="70" height="60" className=" align-text-top "/>Guru Guru Bubble Tea</Link>
       <div className="menu" onClick={() => {
         setMenuOpen(!menuOpen);
       }}>
