@@ -5,7 +5,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#81C6E8;
+    background-color:#E7D9EA;
     position: sticky;
     top:0;
     
@@ -16,7 +16,7 @@ font-size: 1.5rem;
 margin: 1rem;
 font-weight: bold;
 text-decoration: none;
-color: white;
+color: black;
 }
 
 nav ul{

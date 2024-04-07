@@ -14,20 +14,27 @@ const TopCarousel = () =>{
   return (
     <>
       <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
+      
         <Carousel.Item>
           <img
             className="d-block w-100"
             src="/src/assets/img1.jpeg"
             alt="Primer slide"
           />
+        <div className="carousel-overlay position-absolute">
+          <h2>¡Descubre la auténtica experiencia del Bubble Tea en Ecuador!</h2>
+        </div>
         </Carousel.Item>
         <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/src/assets/img2.jpeg"
-          alt="Segundo slide"
-        />
-        </Carousel.Item>  
+          <img
+            className="d-block w-100"
+            src="/src/assets/img2.jpeg"
+            alt="Segundo slide"
+          />
+        <div className="carousel-overlay position-absolute">
+          <h2>¡Únete a nuestra aventura y descubre el auténtico Bubble Tea, hecho con amor y tradición taiwanesa!</h2>
+        </div>
+        </Carousel.Item>
       </Carousel>
     </>
 
