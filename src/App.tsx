@@ -7,18 +7,17 @@ import About from './pages/About';
 import Information from './pages/Information';
 import Menu from './pages/Menu';
 import Home from './pages/Home';
-
 function App() {
   return (
     <div className="App">
       <Navbar />
+      
       <Routes>
         <Route path={"/"} element={<Home/>}/>
         <Route path={"/about"} element={<About/>}/>
         <Route path={"/menu"} element={<Menu/>}/>
         <Route path={"/information"} element={<Information/>}/>
       </Routes>
-   
     </div>  
   );
 }

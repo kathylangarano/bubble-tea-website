@@ -15,15 +15,17 @@ export  const Navbar = () =>{
         <span></span>
       </div>
 
-  <ul className={menuOpen ? "open": " "}>
-    <li>
-      <Link to={"/src/Components/Pages/About.tsx"}>Nosotros</Link>
-    </li>
-    <li>
-      <Link to={"/src/Components/Pages/Menu.tsx"}>Menú</Link></li>
-    <li>
-      <Link to={"/src/Pages/Information.tsx"}>Información</Link></li>
-  </ul>
+      <ul className={menuOpen ? "open" : ""}>
+        <li>
+          <Link to={"/about"}>Nosotros</Link>
+        </li>
+        <li>
+          <Link to={"/menu"}>Menú</Link>
+        </li>
+        <li>
+          <Link to={"/information"}>Información</Link>
+        </li>
+      </ul>
 </nav>
 
   )
