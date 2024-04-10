@@ -1,11 +1,13 @@
 import React from 'react';
 export const About = () =>{
   return (
-   
-<div>
-      hola
-    </div>
-
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">conoce mas</Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 

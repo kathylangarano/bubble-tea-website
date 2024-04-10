@@ -1,14 +1,28 @@
-import React, { useState, useRef } from 'react';
+import  { useState } from 'react';
+import {useNavigate } from 'react-router';
+
 import Slider from "react-slick";
 import "../../styles/ProductCarousel.css";
-import img1 from '../../assets/img1.jpeg';
-import img2 from '../../assets/img2.jpeg';
-import logo from "../../assets/logo.jpg"
+import bt from '../../assets/images/bt.png';
+import btmango from '../../assets//images/btmango.png';
+import btpanela from "../../assets/images/btpanela.png"
+import btjamaica from "../../assets/images/btjamaica.png"
+import btfresa from "../../assets/images/btfresa.png"
+import Buttons from '../../common/Button/Button';
+import CustomTypography from '../../common/Typography/Typography';
+
+
 
 const ProductsCarousel = () =>{
-  const productsCarousel = [img1, img2, logo];
-  const productsCarouselName = ["Tea", "Hand", "Logo"];
-  const [activeIndex, setActiveIndex] = useState(0); // índice del slide actual
+  const productsCarousel = [bt, btmango, btpanela, btjamaica, btfresa];
+  const productsCarouselName = ["Bubble Tea", "Bubble Tea Mango", "Bubble Tea Panela", "Bubble Tea Jamaica", "Bubble Tea Fresa"];
+  const [activeIndex, setActiveIndex] = useState(0); 
+  const navigate = useNavigate();
+
+
+  const handleButtonClick = () => {
+    navigate('/Menu');
+  };
 
   const settings = {
     infinite: true,
@@ -23,12 +37,20 @@ const ProductsCarousel = () =>{
   
   return (
     <div className="slider">
+      <div className="menu-button-box"> 
+        <Buttons
+          variant="contained"
+          size="large"
+          buttonText="Mira más productos"
+          onClick={handleButtonClick} 
+        />
+      </div>
       <Slider {...settings as any}> 
         {productsCarousel.map((img, indexI) => (
           <div className={`carousel-slide ${indexI === activeIndex ? 'carousel-slide-active' : ''}`}>
             <div className="product">
               <img src={img} alt={img} className="product-img"/>
-              <p className="product-name">{productsCarouselName[indexI]}</p>
+              <CustomTypography variant="p" text={productsCarouselName[indexI]}/>
             </div>
           </div>
         ))}

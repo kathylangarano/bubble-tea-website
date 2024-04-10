@@ -4,6 +4,7 @@
     height: 700px; /* Ajusta la altura del carrusel según tus necesidades */
     overflow: hidden;
   }
+
   
 .carousel-item img {
     position: absolute;
@@ -44,4 +45,18 @@
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
   filter: brightness(75%);
+}
+
+.aboutus-button-box{
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-button-box button{
+  font-weight: bold;
+  color: #494E4C;
+  /* background-color: #35DDE3; */
+  background-color: #98E4C4;
+  width: 160px;
 }

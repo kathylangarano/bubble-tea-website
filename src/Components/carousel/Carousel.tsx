@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
+import {useNavigate } from 'react-router';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../styles/Carousel.css"
+import Buttons from '../../common/Button/Button';
 
 const TopCarousel = () =>{
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/About');
+  };
 
   const handleSelect = (selectedIndex: React.SetStateAction<number>) => {
     setIndex(selectedIndex);
@@ -12,13 +19,12 @@ const TopCarousel = () =>{
 
 
   return (
-    <>
+    <div>
       <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
-      
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/src/assets/img1.jpeg"
+            src="/src/assets/images/img1.jpeg"
             alt="Primer slide"
           />
         <div className="carousel-overlay position-absolute">
@@ -28,7 +34,7 @@ const TopCarousel = () =>{
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/src/assets/img2.jpeg"
+            src="/src/assets/images/img2.jpeg"
             alt="Segundo slide"
           />
         <div className="carousel-overlay position-absolute">
@@ -36,7 +42,15 @@ const TopCarousel = () =>{
         </div>
         </Carousel.Item>
       </Carousel>
-    </>
+      <div className="aboutus-button-box"> 
+        <Buttons
+          variant="contained"
+          size="large"
+          buttonText="Conoce más"
+          onClick={handleButtonClick}
+        />
+      </div>
+    </div>
 
   );
 }
