@@ -1,5 +1,5 @@
 import React from 'react';
-import MediaCard from './MediaCard';
+import MediaCard from '../components/MediaCard';
 import { Box } from '@mui/material';
 
 export default function CardsContainer() {
