@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router';
+import {Route, Routes } from 'react-router';
 import './App.css'
 // src/App.tsx
 
@@ -7,19 +7,20 @@ import About from './pages/About';
 import Information from './pages/Information';
 import Menu from './pages/Menu';
 import Home from './pages/Home';
+import InfoFooter from './Components/InfoFooter';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path={"/"} element={<Home/>}/>
-        <Route path={"/about"} element={<About/>}/>
-        <Route path={"/menu"} element={<Menu/>}/>
-        <Route path={"/information"} element={<Information/>}/>
-      </Routes>
-   
-    </div>  
+        <Navbar />
+        <Routes>
+          <Route path={"/"} element={<Home/>}/>
+          <Route path={"/About"} element={<About/>}/>
+          <Route path={"/Menu"} element={<Menu/>}/>
+          <Route path={"/Information"} element={<Information/>}/>
+        </Routes>
+        <InfoFooter/>
+    </div>
   );
 }
 

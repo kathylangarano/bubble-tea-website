@@ -17,12 +17,12 @@ export  const Navbar = () =>{
 
   <ul className={menuOpen ? "open": " "}>
     <li>
-      <Link to={"/src/Components/Pages/About.tsx"}>Nosotros</Link>
+      <Link to={"/About"}>Nosotros</Link>
     </li>
     <li>
-      <Link to={"/src/Components/Pages/Menu.tsx"}>Menú</Link></li>
+      <Link to={"/Menu"}>Menú</Link></li>
     <li>
-      <Link to={"/src/Pages/Information.tsx"}>Información</Link></li>
+      <Link to={"/Information"}>Información</Link></li>
   </ul>
 </nav>
 

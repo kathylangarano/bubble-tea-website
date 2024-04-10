@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">about</Link>
+          <Link to="/">conoce mas</Link>
         </li>
       </ul>
     </nav>
