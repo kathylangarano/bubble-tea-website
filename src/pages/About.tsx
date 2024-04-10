@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-const About: React.FC = () => {
+export const About = () =>{
   return (
     <nav>
       <ul>
@@ -11,6 +9,8 @@ const About: React.FC = () => {
       </ul>
     </nav>
   );
-};
+}
 
 export default About;
+
+

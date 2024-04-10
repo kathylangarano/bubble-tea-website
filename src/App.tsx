@@ -7,6 +7,7 @@ import About from './pages/About';
 import Information from './pages/Information';
 import Menu from './pages/Menu';
 import Home from './pages/Home';
+
 import InfoFooter from './Components/InfoFooter';
 
 function App() {

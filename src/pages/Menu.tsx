@@ -1,16 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CardsContainer from '../components/CardsContainer';
 
 const Menu: React.FC = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">menu</Link>
-        </li>
-        
-      </ul>
-    </nav>
+  <CardsContainer />
+
   );
 };
 
