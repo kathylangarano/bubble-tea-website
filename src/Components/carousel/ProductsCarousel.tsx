@@ -1,6 +1,4 @@
 import  { useState } from 'react';
-import {useNavigate } from 'react-router';
-
 import Slider from "react-slick";
 import "../../styles/ProductCarousel.css";
 import bt from '../../assets/images/bt.png';
@@ -10,6 +8,7 @@ import btjamaica from "../../assets/images/btjamaica.png"
 import btfresa from "../../assets/images/btfresa.png"
 import Buttons from '../../common/Button/Button';
 import CustomTypography from '../../common/Typography/Typography';
+import UseNavigation from '../../hooks/UseNavigate';
 
 
 
@@ -17,12 +16,8 @@ const ProductsCarousel = () =>{
   const productsCarousel = [bt, btmango, btpanela, btjamaica, btfresa];
   const productsCarouselName = ["Bubble Tea", "Bubble Tea Mango", "Bubble Tea Panela", "Bubble Tea Jamaica", "Bubble Tea Fresa"];
   const [activeIndex, setActiveIndex] = useState(0); 
-  const navigate = useNavigate();
+  const goTo = UseNavigation();
 
-
-  const handleButtonClick = () => {
-    navigate('/Menu');
-  };
 
   const settings = {
     infinite: true,
@@ -42,7 +37,7 @@ const ProductsCarousel = () =>{
           variant="contained"
           size="large"
           buttonText="Mira más productos"
-          onClick={handleButtonClick} 
+          onClick={goTo("/Menu")} 
         />
       </div>
       <Slider {...settings as any}> 

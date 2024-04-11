@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
-import {useNavigate } from 'react-router';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../styles/Carousel.css"
 import Buttons from '../../common/Button/Button';
+import UseNavigation from '../../hooks/UseNavigate';
 
 const TopCarousel = () =>{
   const [index, setIndex] = useState(0);
-  const navigate = useNavigate();
-
-  const handleButtonClick = () => {
-    navigate('/About');
-  };
+  const goTo = UseNavigation();
 
   const handleSelect = (selectedIndex: React.SetStateAction<number>) => {
     setIndex(selectedIndex);
@@ -47,7 +43,7 @@ const TopCarousel = () =>{
           variant="contained"
           size="large"
           buttonText="Conoce más"
-          onClick={handleButtonClick}
+          onClick={goTo("/About")}
         />
       </div>
     </div>
