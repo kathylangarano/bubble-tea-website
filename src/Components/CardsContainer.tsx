@@ -1,4 +1,3 @@
-import React from 'react';
 import MediaCard from '../components/MediaCard';
 import { Box } from '@mui/material';
 
