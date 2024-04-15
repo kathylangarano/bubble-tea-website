@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaTiktok, FaDirections, FaPhone } from "react-icons/fa"
-import CustomTypography from "../common/Typography/Typography"
+import CustomTypography from "../common/CustomTypography/CustomTypography"
 import "../styles/InfoFooter.css"
 
 
