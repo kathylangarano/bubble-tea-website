@@ -1,0 +1,71 @@
+ .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: row; /* Distribución horizontal predeterminada */
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .text-section, .image-section {
+    flex: 1; /* Asegura que cada sección use la mitad del espacio disponible */
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  .image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 410px; /* Controla el tamaño máximo de las imágenes */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .video-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .video-section iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+  }
+  
+  /* Consultas de medios para dispositivos pequeños */
+  @media (max-width: 768px) {
+    .content-section {
+      flex-direction: column; /* Cambia a distribución vertical en dispositivos pequeños */
+    }
+  
+    .text-section {
+      order: 1; /* Asegura que el texto venga primero */
+    }
+  
+    .image-section {
+      order: 2; /* Asegura que las imágenes vengan después del texto */
+      width: 90%; /* Ajuste para una mejor visualización en móviles */
+    }
+  }
+  
+
+
+  
