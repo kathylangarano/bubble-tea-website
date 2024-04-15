@@ -7,7 +7,7 @@ import btpanela from "../../assets/images/btpanela.png"
 import btjamaica from "../../assets/images/btjamaica.png"
 import btfresa from "../../assets/images/btfresa.png"
 import Buttons from '../../common/Button/Button';
-import CustomTypography from '../../common/CustomTypography/CustomTypography';
+import CustomTypography from '../../common/Typography/Typography';
 import UseNavigation from '../../hooks/UseNavigate';
 
 
