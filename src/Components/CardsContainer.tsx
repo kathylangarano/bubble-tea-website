@@ -1,7 +1,7 @@
 import React from 'react';
-import MediaCard from '../Components/MediaCard';
+import MediaCard from '../components/MediaCard';
 import { Box, TextField } from '@mui/material';
-import { useProductsStore } from '../Components/store/ProductStore';
+import { useProductsStore } from '../components/store/ProductStore';
 
 export default function CardsContainer() {
     const { setSearchQuery, filteredProducts } = useProductsStore();
