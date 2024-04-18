@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProductsCarousel from '../components/carousel/ProductsCarousel';
-import TopCarousel from '../components/carousel/Carousel';
+import ProductsCarousel from '../Components/carousel/ProductsCarousel';
+import TopCarousel from '../Components/carousel/Carousel';
 
 const Home = () =>{
 

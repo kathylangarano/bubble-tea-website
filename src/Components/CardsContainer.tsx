@@ -1,4 +1,4 @@
-import MediaCard from '../components/MediaCard';
+import MediaCard from '../Components/MediaCard';
 import { Box } from '@mui/material';
 
 export default function CardsContainer() {
