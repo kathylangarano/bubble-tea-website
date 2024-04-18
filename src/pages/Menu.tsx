@@ -1,5 +1,5 @@
 import React from 'react';
-import CardsContainer from '../components/CardsContainer';
+import CardsContainer from '../Components/CardsContainer';
 
 const Menu: React.FC = () => {
   return (

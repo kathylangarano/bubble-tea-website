@@ -2,13 +2,13 @@ import {Route, Routes } from 'react-router';
 import './App.css'
 // src/App.tsx
 
-import {Navbar} from './components/Navbar';
+import {Navbar} from './Components/Navbar';
 import About from './pages/About';
 import Information from './pages/Information';
 import Menu from './pages/Menu';
 import Home from './pages/Home';
 
-import InfoFooter from './components/InfoFooter';
+import InfoFooter from './Components/InfoFooter';
 
 function App() {
   return (
