@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 20px;
     width: 100%;
+    padding: 20px;
   }
   
   .content-section {
@@ -13,6 +13,7 @@
     flex-direction: row; /* Distribución horizontal predeterminada */
     width: 100%;
     justify-content: space-between;
+    padding: 50px;
   }
   
   .text-section, .image-section {
@@ -35,6 +36,10 @@
     max-width: 410px; /* Controla el tamaño máximo de las imágenes */
     height: auto;
     margin-bottom: 20px;
+  }
+  .img-responsive {
+    max-width: 100%; /* Establece un ancho máximo del 100% para que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
   }
   
   .video-section {

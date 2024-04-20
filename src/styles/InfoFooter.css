@@ -3,33 +3,94 @@ a{
 }
 .footer-main-container{
   margin-top: 250px;
-  background-color:#FBF5FB;
-
-}
-
-.information-box{
   display: flex;
-  margin-left: 3%;
-  margin-top: 10px;
-  font-size: 21px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7d9ea;
+  padding: 20px; 
+
 }
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%; /* Ajustar el ancho para que los elementos estén centrados y ocupen un espacio adecuado */
+  margin-bottom: 20px; /* Espacio entre la información y los iconos de redes sociales */
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre cada par de ícono e información */
+}
+
+.info-item .icon {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.information-box {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.information-box.left {
+  margin-right: auto; /* Empujar hacia la izquierda en pantallas más grandes */ 
+  display: flex;
+  flex-direction: column; /* Organizar los elementos en columnas */
+  align-items: flex-start;
+}
+
+.information-box.right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column; /* Organizar los elementos en columnas */
+  align-items: flex-start; /* Empujar hacia la derecha en pantallas más grandes */
+}
+
 
 .information-box .logo{
   margin-top: 1px;
+}
+.information-box .icon {
+  font-size: 24px; /* Ajustar el tamaño de los íconos */
+}
+
+.social-media-container .icon {
+  font-size: 24px; /* Ajustar el tamaño de los íconos de redes sociales */
 }
 
 .information-box h6{
   color: black;
   margin-left: 19px;
-  font-size: 18.8px;
+  font-size: 16.8px;
   font-weight: bold;
 }
 
-
-.information-box h5{
-  color: black;
-  margin-top: 2px;
-  margin-left: 10px;
-  font-size: 18.8px;
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Añade un margen superior para separar el footer del contenido */
 }
 
+.social-media-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px; /* Ajusta los márgenes para pantallas más pequeñas */
+}
+
+
+@media screen and (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .information-box {
+    margin: 10px 0; /* Espacio entre las cajas de información en pantallas más pequeñas */
+  }
+}

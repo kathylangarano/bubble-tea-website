@@ -3,6 +3,9 @@
     width: 100%;
     height: 700px; /* Ajusta la altura del carrusel según tus necesidades */
     overflow: hidden;
+    
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    
   }
 
   
@@ -25,6 +28,7 @@
   color: #fff; /* Texto blanco */
   padding: 20px;
   width: 400px; /* O el ancho que necesites */
+  
 }
 
 .carousel-overlay h2,
