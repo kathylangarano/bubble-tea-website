@@ -2,13 +2,14 @@ a{
   text-decoration: none;
 }
 .footer-main-container{
-  margin-top: 250px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #e7d9ea;
   padding: 20px; 
+  height: 170px;
 
 }
 
@@ -16,17 +17,17 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%; /* Ajustar el ancho para que los elementos estén centrados y ocupen un espacio adecuado */
-  margin-bottom: 20px; /* Espacio entre la información y los iconos de redes sociales */
+  width: 80%;
+  margin-bottom: 10px; 
 }
 .info-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Espacio entre cada par de ícono e información */
+  margin-bottom: 10px;
 }
 
 .info-item .icon {
-  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  margin-right: 10px;
 }
 
 .information-box {
@@ -37,17 +38,17 @@ a{
 }
 
 .information-box.left {
-  margin-right: auto; /* Empujar hacia la izquierda en pantallas más grandes */ 
+  margin-right: auto; 
   display: flex;
-  flex-direction: column; /* Organizar los elementos en columnas */
+  flex-direction: column;
   align-items: flex-start;
 }
 
 .information-box.right {
   margin-left: auto;
   display: flex;
-  flex-direction: column; /* Organizar los elementos en columnas */
-  align-items: flex-start; /* Empujar hacia la derecha en pantallas más grandes */
+  flex-direction: column; 
+  align-items: flex-start; 
 }
 
 
@@ -55,11 +56,11 @@ a{
   margin-top: 1px;
 }
 .information-box .icon {
-  font-size: 24px; /* Ajustar el tamaño de los íconos */
+  font-size: 24px;
 }
 
 .social-media-container .icon {
-  font-size: 24px; /* Ajustar el tamaño de los íconos de redes sociales */
+  font-size: 24px; 
 }
 
 .information-box h6{
@@ -72,7 +73,7 @@ a{
 .social-media-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Añade un margen superior para separar el footer del contenido */
+  margin-top: 20px; 
 }
 
 .social-media-container a {
@@ -80,7 +81,7 @@ a{
   align-items: center;
   text-decoration: none;
   color: inherit;
-  margin: 0 10px; /* Ajusta los márgenes para pantallas más pequeñas */
+  margin: 0 10px;
 }
 
 
@@ -91,6 +92,6 @@ a{
   }
 
   .information-box {
-    margin: 10px 0; /* Espacio entre las cajas de información en pantallas más pequeñas */
+    margin: 10px 0; /
   }
 }
