@@ -14,16 +14,16 @@ export default function CardsContainer() {
         <Box sx={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center', // Asegura que todo está centrado
-            width: '100%', // Asegura que el Box ocupe todo el ancho disponible
+            alignItems: 'center', 
+            width: '100%', 
             bgcolor: 'transparent',
-            p: 1 // Padding general para todo el contenedor
+            p: 1 
         }}>
-            {/* Contenedor para la barra de búsqueda */}
+            
             <Box sx={{
-                width: '100%', // Ocupa todo el ancho disponible
-                maxWidth: { xs: '100%', sm: '60%', md: '40%' }, // Anchos máximos en diferentes tamaños de pantalla
-                p: 1 // Padding alrededor de la barra de búsqueda
+                width: '100%', 
+                maxWidth: { xs: '100%', sm: '60%', md: '40%' }, 
+                p: 1 
             }}>
                 <TextField
                     label="Buscar"
@@ -32,15 +32,15 @@ export default function CardsContainer() {
                     fullWidth
                 />
             </Box>
- {/* Contenedor para las tarjetas de productos */}
+ 
  <Box sx={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'center', // Centra las tarjetas en la línea
-                width: '100%', // Asegura que este Box ocupe todo el ancho disponible
+                justifyContent: 'center', 
+                width: '100%', 
                 '& > :not(style)': {
-                    m: 1, // Margen alrededor de cada tarjeta para separación
-                    width: { xs: 'calc(100% / 2 - 8px)', sm: 'calc(100% / 3 - 8px)' }, // Responsividad para el ancho de las tarjetas
+                    m: 1, 
+                    width: { xs: 'calc(100% / 2 - 8px)', sm: 'calc(100% / 3 - 8px)' }, 
                     height: 400,
                 },
             }}>

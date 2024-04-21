@@ -1,7 +1,7 @@
 .carousel-item {
     position: relative;
     width: 100%;
-    height: 700px; /* Ajusta la altura del carrusel según tus necesidades */
+    height: 700px; 
     overflow: hidden;
     
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
@@ -24,24 +24,24 @@
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
-  color: #fff; /* Texto blanco */
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: #fff; 
   padding: 20px;
-  width: 400px; /* O el ancho que necesites */
+  width: 400px; 
   
 }
 
 .carousel-overlay h2,
 .carousel-overlay p {
-  margin: 0; /* Remueve los márgenes predeterminados si es necesario */
+  margin: 0; 
 }
 .carousel-item img {
-  transition: filter 0.5s ease-in-out; /* Transición suave para el efecto de filtro */
+  transition: filter 0.5s ease-in-out; 
 }
 
-/* Efecto hover para las imágenes */
+
 .carousel-item img:hover {
-  filter: blur(2px); /* Oscurece la imagen */
+  filter: blur(2px); 
 }
 .carousel-control-prev, .carousel-control-next {
   transition: filter 0.5s ease-in-out;

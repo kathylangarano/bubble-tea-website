@@ -10,14 +10,14 @@
   
   .content-section {
     display: flex;
-    flex-direction: row; /* Distribución horizontal predeterminada */
+    flex-direction: row; 
     width: 100%;
     justify-content: space-between;
     padding: 50px;
   }
   
   .text-section, .image-section {
-    flex: 1; /* Asegura que cada sección use la mitad del espacio disponible */
+    flex: 1; 
     padding: 20px;
     text-align: justify;
     text-justify: inter-word;
@@ -33,13 +33,13 @@
   
   .image-section img {
     width: 100%;
-    max-width: 410px; /* Controla el tamaño máximo de las imágenes */
+    max-width: 410px; 
     height: auto;
     margin-bottom: 20px;
   }
   .img-responsive {
-    max-width: 100%; /* Establece un ancho máximo del 100% para que la imagen no exceda el ancho del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    max-width: 100%; 
+    height: auto; 
   }
   
   .video-section {
@@ -55,19 +55,19 @@
     height: 360px;
   }
   
-  /* Consultas de medios para dispositivos pequeños */
+ 
   @media (max-width: 768px) {
     .content-section {
-      flex-direction: column; /* Cambia a distribución vertical en dispositivos pequeños */
+      flex-direction: column; 
     }
   
     .text-section {
-      order: 1; /* Asegura que el texto venga primero */
+      order: 1; 
     }
   
     .image-section {
-      order: 2; /* Asegura que las imágenes vengan después del texto */
-      width: 90%; /* Ajuste para una mejor visualización en móviles */
+      order: 2; 
+      width: 90%; 
     }
   }
   
