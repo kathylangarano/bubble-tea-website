@@ -4,8 +4,7 @@ import CustomTypography from "../common/CustomTypography/CustomTypography";
 import "../styles/InfoFooter.css";
 import { Link } from "react-router-dom";
 
-// Importa la imagen del logo
-import logo from "../assets/images/logo1 (1).png";
+import logo2 from "../assets/images/logo1 (1).png";
 
 const InfoFooter = () => {
   return (
@@ -38,8 +37,8 @@ const InfoFooter = () => {
         </div>
         
         <div className="information-box right">
-          {/* Utiliza la imagen importada para el logo */}
-          <Link to={"/"} className="title"><img src={logo} alt="Logo" width="90" height="70" className=" align-text-top "/></Link>
+        
+          <Link to={"/"} className="title"><img src={logo2} alt="Logo" width="90" height="70" className=" align-text-top "/></Link>
           <Link to="/About">
             <CustomTypography variant="h6" text="Nosotros" />
           </Link>
