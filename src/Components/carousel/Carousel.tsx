@@ -20,7 +20,7 @@ const TopCarousel = () =>{
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/src/assets/images/img1.jpeg"
+            src="../assets/images/img1.jpeg"
             alt="Primer slide"
           />
         <div className="carousel-overlay position-absolute">
@@ -30,7 +30,7 @@ const TopCarousel = () =>{
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/src/assets/images/img2.jpeg"
+            src="../assets/images/img2.jpeg"
             alt="Segundo slide"
           />
         <div className="carousel-overlay position-absolute">
