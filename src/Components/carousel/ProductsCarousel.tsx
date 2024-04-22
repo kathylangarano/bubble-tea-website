@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Slider from "react-slick";
 import "../../styles/ProductCarousel.css";
-import bt from '../../assets/images/bt.png';
-import btmango from '../../assets/images/btmango.png';
-import btpanela from "../../assets/images/btpanela.png"
-import btjamaica from "../../assets/images/btjamaica.png"
-import btfresa from "../../assets/images/btfresa.png"
+import bt from '../../../public/assets/images/bt.png';
+import btmango from '../../../public/assets/images/btmango.png';
+import btpanela from "../../../public/assets/images/btpanela.png"
+import btjamaica from "../../../public/assets/images/btjamaica.png"
+import btfresa from "../../../public/assets/images/btfresa.png"
 import Buttons from '../../common/Button/Button';
 import CustomTypography from '../../common/CustomTypography/CustomTypography';
 import UseNavigation from '../../hooks/UseNavigate';

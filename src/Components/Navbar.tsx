@@ -10,7 +10,7 @@ export  const Navbar = () =>{
     <nav >
      
       
-      <Link to={"/"} className="title"><img src="../../assets/images/logo1 (1).png" alt="Logo" width="90" height="70" className=" align-text-top "/></Link>
+      <Link to={"/"} className="title"><img src="../../public/assets/images/logo1 (1).png" alt="Logo" width="90" height="70" className=" align-text-top "/></Link>
       <div className="menu" onClick={() => {
         setMenuOpen(!menuOpen);
       }}>
