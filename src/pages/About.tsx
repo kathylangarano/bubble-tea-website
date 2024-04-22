@@ -9,7 +9,7 @@ const AboutUs: React.FC = () => {
     <div className="about-container">
       <img
             className="d-block img-responsive"
-            src="../assets/images/no products.jpeg"
+            src="../../assets/images/no products.jpeg"
             alt="Primer slide"
           />
        
@@ -22,13 +22,13 @@ const AboutUs: React.FC = () => {
              <p>Ahora, esta auténtica experiencia llega a Ecuador, de la mano de alguien que creció disfrutando de esta bebida emblemática.</p>
         </div>
         <div className="image-section">
-              <img src="../assets/images/about4.jpeg" alt="Imagen representativa" /> 
+              <img src="../../assets/images/about4.jpeg" alt="Imagen representativa" /> 
         </div>
       </div>
       
       <img
             className="d-block w-100"
-            src="../assets/images/about1.jpeg"
+            src="../../assets/images/about1.jpeg"
             alt="Primer slide"
           />
 
@@ -43,7 +43,7 @@ const AboutUs: React.FC = () => {
              Pronto, esperamos expandir nuestra presencia a toda la región.<p> ¡No te pierdas la oportunidad de experimentar el verdadero sabor del Bubble Tea, directamente desde Taiwán hasta tu paladar! </p>
       </div>
       <div className="image-section">
-          <img src="../assets/images/about3.jpeg" alt="Segunda imagen representativa" />
+          <img src="../../assets/images/about3.jpeg" alt="Segunda imagen representativa" />
       </div>
 
       </div>
