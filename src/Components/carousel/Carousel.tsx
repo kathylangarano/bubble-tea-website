@@ -4,8 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../styles/Carousel.css"
 import Buttons from '../../common/Button/Button';
 import UseNavigation from '../../hooks/UseNavigate';
-import "../../assets/images/img1.jpeg";
-import "../../assets/images/img2.jpeg";
+
+// Importa las imágenes
+import img1 from '../../assets/images/img1.jpeg';
+import img2 from '../../assets/images/img2.jpeg';
 
 const TopCarousel = () =>{
   const [index, setIndex] = useState(0);
@@ -22,22 +24,22 @@ const TopCarousel = () =>{
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../../assets/images/img1.jpeg"
+            src={img1}  
             alt="Primer slide"
           />
-        <div className="carousel-overlay position-absolute">
-          <h2>¡Descubre la auténtica experiencia del Bubble Tea en Ecuador!</h2>
-        </div>
+          <div className="carousel-overlay position-absolute">
+            <h2>¡Descubre la auténtica experiencia del Bubble Tea en Ecuador!</h2>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../../assets/images/img2.jpeg"
+            src={img2}  
             alt="Segundo slide"
           />
-        <div className="carousel-overlay position-absolute">
-          <h2>¡Únete a nuestra aventura y descubre el auténtico Bubble Tea, hecho con amor y tradición taiwanesa!</h2>
-        </div>
+          <div className="carousel-overlay position-absolute">
+            <h2>¡Únete a nuestra aventura y descubre el auténtico Bubble Tea, hecho con amor y tradición taiwanesa!</h2>
+          </div>
         </Carousel.Item>
       </Carousel>
       <div className="aboutus-button-box"> 
@@ -49,7 +51,6 @@ const TopCarousel = () =>{
         />
       </div>
     </div>
-
   );
 }
 
