@@ -39,10 +39,10 @@ const InfoFooter = () => {
         <div className="information-box right">
         
           <Link to={"/"} className="title"><img src={logo2} alt="Logo" width="90" height="70" className=" align-text-top "/></Link>
-          <Link to="/About">
+          <Link to={"/About"}>
             <CustomTypography variant="h6" text="Nosotros" />
           </Link>
-          <Link to="/Menu">
+          <Link to={"/Menu"}>
             <CustomTypography variant="h6" text="Menú" />
           </Link> 
         </div>

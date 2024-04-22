@@ -22,12 +22,12 @@ export const Navbar = () =>{
 
       <ul className={menuOpen ? "open": " "}>
         <li className="menu-typography">
-          <Link to="/About">
+          <Link to={"/About"}>
             <CustomTypography variant="h6" text="Nosotros" />
           </Link>
         </li>
         <li className="menu-typography">
-          <Link to="/Menu">
+          <Link to={"/Menu"}>
             <CustomTypography variant="h6" text="Menú" />
           </Link>
         </li>
