@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../styles/Carousel.css"
 import Buttons from '../../common/Button/Button';
 import UseNavigation from '../../hooks/UseNavigate';
+import "../../../public/assets/images/img1.jpeg";
+import "../../../public/assets/images/img2.jpeg";
 
 const TopCarousel = () =>{
   const [index, setIndex] = useState(0);
