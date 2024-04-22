@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../styles/Carousel.css"
 import Buttons from '../../common/Button/Button';
 import UseNavigation from '../../hooks/UseNavigate';
-
-// Importa las imágenes
 import img1 from '../../assets/images/img1.jpeg';
 import img2 from '../../assets/images/img2.jpeg';
 

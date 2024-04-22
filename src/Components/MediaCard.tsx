@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-// Define una interfaz para los props
+
 interface MediaCardProps {
   image: string;
   title: string;
