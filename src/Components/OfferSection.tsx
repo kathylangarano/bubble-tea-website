@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLeaf, FaHeart, FaPagelines } from "react-icons/fa";
 import "../styles/OfferSection.css";
 
