@@ -1,4 +1,6 @@
 import create from 'zustand';
+import jamaica from "../../assets/images/bubble jamaica tea.jpeg";
+
 
 interface Product {
   image: string;
@@ -18,7 +20,7 @@ interface ProductsState {
 
 export const useProductsStore = create<ProductsState>((set, get) => ({
   products: [
-    { id: 1, title: "Bubble jamaica tea", description: "Té Frutal", image: "../../assets/images/bubble jamaica tea.jpeg", priceLarge: "$4.75", priceMedium:"$3.75"},
+    { id: 1, title: "Bubble jamaica tea", description: "Té Frutal", image: jamaica, priceLarge: "$4.75", priceMedium:"$3.75"},
     { id: 2, title: "Bubble tea de fresa", description: "Té Frutal", image: "../../assets/images/bubble tea fresa.jpeg", priceLarge: "$4.75", priceMedium:"$3.75"},
     { id: 3, title: "Bubble tea de mango", description: "Té Frutal", image: "../../assets/images/bubble tea mango.jpeg", priceLarge: "$4.75", priceMedium:"$3.75"},
     { id: 4, title: " Iced Bubble Tea", description: "Té Frutal", image: "../../assets/images/ice bubble tea.jpeg", priceLarge: "$4.75", priceMedium:"$3.75"},
