@@ -53,6 +53,9 @@ export default function CardsContainer() {
                         priceLarge={product.priceLarge}
                         priceMedium={product.priceMedium}
                         price={product.price}
+                        isVegan={product.isVegan}
+                        isVegetarian={product.isVegetarian}
+                        isGlutenFree={product.isGlutenFree}
                     />
                 ))}
             </Box>
