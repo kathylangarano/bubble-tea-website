@@ -8,9 +8,17 @@ a{
   align-items: center;
   justify-content: center;
   background-color: #e7d9ea;
-  padding: 20px; 
+  padding: 20px;
   height: 170px;
+  position: relative; 
+  border-radius: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
 
+}
+
+.footer-main-container:hover {
+  transform: translateY(5px); /* Mueve el footer hacia abajo en hover */
 }
 
 .info-container {

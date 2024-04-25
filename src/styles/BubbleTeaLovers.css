@@ -1,0 +1,70 @@
+.bubble-tea-lovers-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+
+    width: 100%;
+}
+
+
+  
+  .bubble-tea-lovers {
+    text-align: center;
+  }
+  
+  .review-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px; /* Aumenta el espacio entre las tarjetas */
+    margin: 20px auto;
+    width: 100%;
+}
+
+
+  
+  
+  .column {
+    flex: 1;
+  }
+  
+  .review-card {
+    background-color:  #000000;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    max-width: 300px;
+    margin: 20px auto; /* Aumenta el margen entre tarjetas */
+    position: relative;
+    overflow: hidden;
+}
+
+
+  
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Asegura que todo el contenido de .card-actions esté alineado verticalmente */
+    padding: 10px 0; /* Añade padding para un espaciado vertical uniforme si es necesario */
+}
+
+.stars {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center; /* Asegura que los íconos de las estrellas estén alineados verticalmente entre sí */
+}
+
+/* Asegúrate de que el botón de favoritos tenga una alineación consistente con las estrellas */
+IconButton {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido de IconButton */
+}
+  
+  .star-icon {
+    color: gold;
+  }
