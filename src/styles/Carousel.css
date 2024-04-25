@@ -8,7 +8,6 @@
     
   }
 
-  
 .carousel-item img {
     position: absolute;
     top: 50%;
@@ -20,6 +19,7 @@
     min-width: 100%;
     object-fit: cover; 
 }
+
 .carousel-overlay {
   top: 50%;
   left: 10%;
@@ -63,4 +63,8 @@
   /* background-color: #35DDE3; */
   background-color: #98E4C4;
   width: 160px;
+}
+
+.aboutus-button-box button:hover{
+  background-color: #8CD8B8;
 }
