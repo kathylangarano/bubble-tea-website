@@ -8,34 +8,25 @@ a{
   align-items: center;
   justify-content: center;
   background-color: #e7d9ea;
-  padding: 20px;
-  height: 170px;
-  position: relative; 
-  border-radius: 20px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s ease;
+  padding: 10px; 
 
-}
-
-.footer-main-container:hover {
-  transform: translateY(5px); /* Mueve el footer hacia abajo en hover */
 }
 
 .info-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
-  margin-bottom: 10px; 
+  width: 80%; /* Ajustar el ancho para que los elementos estén centrados y ocupen un espacio adecuado */
+  margin-bottom: 20px; /* Espacio entre la información y los iconos de redes sociales */
 }
 .info-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Espacio entre cada par de ícono e información */
 }
 
 .info-item .icon {
-  margin-right: 10px;
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
 }
 
 .information-box {
@@ -46,17 +37,17 @@ a{
 }
 
 .information-box.left {
-  margin-right: auto; 
+  
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Organizar los elementos en columnas */
   align-items: flex-start;
 }
 
 .information-box.right {
-  margin-left: auto;
+  
   display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
+  flex-direction: column; /* Organizar los elementos en columnas */
+  align-items: flex-start; /* Empujar hacia la derecha en pantallas más grandes */
 }
 
 
@@ -64,11 +55,11 @@ a{
   margin-top: 1px;
 }
 .information-box .icon {
-  font-size: 24px;
+  font-size: 24px; /* Ajustar el tamaño de los íconos */
 }
 
 .social-media-container .icon {
-  font-size: 24px; 
+  font-size: 24px; /* Ajustar el tamaño de los íconos de redes sociales */
 }
 
 .information-box h6{
@@ -81,7 +72,7 @@ a{
 .social-media-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; 
+  margin-top: 20px; /* Añade un margen superior para separar el footer del contenido */
 }
 
 .social-media-container a {
@@ -89,17 +80,20 @@ a{
   align-items: center;
   text-decoration: none;
   color: inherit;
-  margin: 0 10px;
+  margin: 0 10px; /* Ajusta los márgenes para pantallas más pequeñas */
 }
 
 
 @media screen and (max-width: 768px) {
   .info-container {
+    margin-top: 20px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .information-box {
-    margin: 10px 0; /
+    margin: 10px 0; /* Espacio entre las cajas de información en pantallas más pequeñas */
   }
+
+  
 }

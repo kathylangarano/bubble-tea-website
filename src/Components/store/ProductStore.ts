@@ -1,4 +1,4 @@
-import create from 'zustand';
+import {create} from 'zustand';
 
 import jamaicaImage from "../../assets/images/bubble jamaica tea.jpeg";
 import fresaImage from "../../assets/images/bubble tea fresa.jpeg";
